@@ -9,10 +9,14 @@ xkb_symbols "basic" {
 
     name[Group1]="German Modded";
 
-    key <BKSL>	{ [ numbersign,             apostrophe,              rightsinglequotemark,    grave                     ] };
-    key <TLDE>	{ [ asciicircum,            degree,                  U21D2,                   U263A                     ] };
-    key <LSGT>	{ [ less,                   greater,                 bar,                     U2225                     ] };
 
+    key <BKSL> { [ numbersign,              apostrophe,              rightsinglequotemark,    grave                     ] };
+    key <TLDE> { [ asciicircum,             degree,                  NoSymbol,                NoSymbol] };
+    key <LSGT> { [ less,                    greater,                 bar,                     U2225                     ] };
+
+    key <AE03> { [ 1,                       exclam,                  U262D,                   U263A                     ] };
+    key <AE03> { [ 2,                       quotebl,                 U262D,                   U1F44D                    ] };
+    key <AE03> { [ 3,                       section,                 U262D,                   U1F937                    ] };
     key <AE11> { [ backslash,               question,                ssharp,                  NoSymbol                  ] };
     key <AE12> { [ grave,                   cedilla,                 NoSymbol,                NoSymbol                  ] };
     key <AD12> { [ plus,                    asterisk,                asciitilde,              dead_macron               ] };
@@ -20,7 +24,7 @@ xkb_symbols "basic" {
     key <AB09> { [ period,                  colon,                   U2026,                   division                  ] };
     key <AB10> { [ minus,                   underscore,              endash,                  emdash                    ] };
 
-    key <AD01> { [ q,                       Q,                       U03D5,                   U211A                     ] };
+    key <AD01> { [ q,                       Q,                       at,                      U211A                     ] };
     key <AD02> { [ w,                       W,                       Greek_omega,             Greek_OMEGA               ] };
     key <AD03> { [ e,                       E,                       Greek_epsilon,           U2203                     ] };
     key <AD04> { [ r,                       R,                       Greek_rho,               U211D                     ] };
@@ -30,7 +34,7 @@ xkb_symbols "basic" {
     key <AD08> { [ i,                       I,                       Greek_iota,              integral                  ] };
     key <AD09> { [ o,                       O,                       intersection,            elementof                 ] };
     key <AD10> { [ p,                       P,                       Greek_pi,                Greek_PI                  ] };
-    key <AD11> { [ braceleft,               braceright,              udiaeresis,              Udiaeresis               ] };
+    key <AD11> { [ braceleft,               braceright,              udiaeresis,              Udiaeresis                ] };
     key <AC01> { [ a,                       A,                       Greek_alpha,             U2200                     ] };
     key <AC02> { [ s,                       S,                       Greek_sigma,             Greek_SIGMA               ] };
     key <AC03> { [ d,                       D,                       Greek_delta,             Greek_DELTA               ] };
