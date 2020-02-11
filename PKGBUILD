@@ -11,7 +11,7 @@ groups=()
 depends=('xkeyboard-config')
 install=
 source=("demod-$pkgver")
-sha256sums=('bb24f88c5b3e28f716c4a48f74958b2d322a394dbdb2ce4f57d15ba13620c7f8')
+sha256sums=('68661c1604a02283330c28e419eadc8bc98c43ee94b561b9eb6de3d14a7d97db')
 
 package() {
 	install -Dm644 demod-$pkgver "$pkgdir/usr/share/X11/xkb/symbols/demod"
