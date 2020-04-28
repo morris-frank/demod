@@ -1,18 +1,18 @@
 # Maintainer: Maurice Frank <maurice dot frank at posteo dot de>
-pkgname=xkb-demod
-pkgver=0.3
+pkgname=xkb-morris
+pkgver=1.0
 pkgrel=1
 epoch=
-pkgdesc="A modified variant of the DE_QWERTZ keyboard layout for developers and scientist."
+pkgdesc="Morris own keymaps. Contain one for German and one for Persian with is suitable for new-learners that are used to a QWERTZ layout."
 arch=('any')
-url="https://github.com/morris-frank/xkb-demod"
+url="https://github.com/morris-frank/xkb-morris"
 license=('GPL')
 groups=()
 depends=('xkeyboard-config')
 install=
-source=("demod-$pkgver")
-sha256sums=('ecd32086e80009f1773476ae6067f821205a2c249f4ddd10ca820918b6176391')
+source=("morris-$pkgver")
+sha256sums=('1bbddb92d33705177b3aec621001bb778c1ffdeb737f901a27f304176736e628')
 
 package() {
-	install -Dm644 demod-$pkgver "$pkgdir/usr/share/X11/xkb/symbols/demod"
+	install -Dm644 morris-$pkgver "$pkgdir/usr/share/X11/xkb/symbols/morris"
 }

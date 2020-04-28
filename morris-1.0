@@ -1,0 +1,103 @@
+partial
+xkb_symbols "punctuation" {
+    key <TLDE> { [ asciicircum,             degree,                  NoSymbol,                U2103                     ] };
+    key <AE11> { [ backslash,               question,                ssharp,                  NoSymbol                  ] };
+    key <AE12> { [ grave,                   dead_circumflex,         dead_macron,             dead_acute                ] };
+
+    key <AD11> { [ braceleft,               braceright,              udiaeresis,              Udiaeresis                ] };
+    key <AD12> { [ plus,                    asterisk,                asciitilde,              dead_tilde                ] };
+
+    key <AC10> { [ parenleft,               parenright,              odiaeresis,              Odiaeresis                ] };
+    key <AC11> { [ bracketleft,             bracketright,            adiaeresis,              Adiaeresis                ] };
+    key <BKSL> { [ numbersign,              apostrophe,              doublelowquotemark,      leftdoublequotemark       ] };
+
+    key <LSGT> { [ less,                    greater,                 bar,                     U2225                     ] };
+    key <AB08> { [ comma,                   semicolon,               periodcentered,          multiply                  ] };
+    key <AB09> { [ period,                  colon,                   U2026,                   division                  ] };
+    key <AB10> { [ minus,                   underscore,              endash,                  U01C0                     ] };
+};
+
+default partial
+xkb_symbols "de" {
+    name[Group1]="Morris own German Keymap";
+
+    include "latin(type4)"
+    include "kpdl(comma)"
+    include "morris(punctuation)"
+    include "level3(ralt_switch)"
+
+    key <AE01> { [ 1,                       exclam,                  NoSymbol,                U263A                     ] };
+    key <AE02> { [ 2,                       quotebl,                 NoSymbol,                U1F44D                    ] };
+    key <AE03> { [ 3,                       section,                 NoSymbol,                U1F937                    ] };
+    key <AE04> { [ 4,                       dollar,                  EuroSign,                U1F926                    ] };
+    key <AE05> { [ 5,                       percent,                 NoSymbol,                U1F914                    ] };
+    key <AE10> { [ 0,                       equal,                   braceright,              U2248                     ] };
+
+    key <AD01> { [ q,                       Q,                       at,                      U211A                     ] };
+    key <AD02> { [ w,                       W,                       Greek_omega,             Greek_OMEGA               ] };
+    key <AD03> { [ e,                       E,                       Greek_epsilon,           U2203                     ] };
+    key <AD04> { [ r,                       R,                       Greek_rho,               U211D                     ] };
+    key <AD05> { [ t,                       T,                       Greek_tau,               partialderivative         ] };
+    key <AD06> { [ z,                       Z,                       Greek_zeta,              NoSymbol                  ] };
+    key <AD07> { [ u,                       U,                       Greek_eta,               includedin                ] };
+    key <AD08> { [ i,                       I,                       Greek_iota,              integral                  ] };
+    key <AD09> { [ o,                       O,                       intersection,            elementof                 ] };
+    key <AD10> { [ p,                       P,                       Greek_pi,                Greek_PI                  ] };
+    key <AC01> { [ a,                       A,                       Greek_alpha,             U2200                     ] };
+    key <AC02> { [ s,                       S,                       Greek_sigma,             Greek_SIGMA               ] };
+    key <AC03> { [ d,                       D,                       Greek_delta,             Greek_DELTA               ] };
+    key <AC04> { [ f,                       F,                       Greek_phi,               Greek_PHI                 ] };
+    key <AC05> { [ g,                       G,                       Greek_gamma,             Greek_GAMMA               ] };
+    key <AC06> { [ h,                       H,                       Greek_psi,               Greek_PSI                 ] };
+    key <AC07> { [ j,                       J,                       Greek_theta,             Greek_THETA               ] };
+    key <AC08> { [ k,                       K,                       Greek_kappa,             multiply                  ] };
+    key <AC09> { [ l,                       L,                       Greek_lambda,            U2112                     ] };
+    key <AB01> { [ y,                       Y,                       Greek_upsilon,           nabla                     ] };
+    key <AB02> { [ x,                       X,                       Greek_xi,                U00AC                     ] };
+    key <AB03> { [ c,                       C,                       Greek_chi,               U2227                     ] };
+    key <AB04> { [ v,                       V,                       NoSymbol,                U2228                     ] };
+    key <AB05> { [ b,                       B,                       Greek_beta,              U21D0                     ] };
+    key <AB06> { [ n,                       N,                       Greek_nu,                U21D2                     ] };
+    key <AB07> { [ m,                       M,                       Greek_mu,                ifonlyif                  ] };
+};
+
+default partial
+xkb_symbols "ir" {
+    name[Group1]="Morris own Persian KeyMap";
+
+    include "ir(pes)"
+    include "nbsp(zwnj2nb3nnb4)"
+    include "morris(punctuation)"
+
+
+    key <AD01> { [ Arabic_qaf,      NoSymbol,                   VoidSymbol              ] };
+    key <AD02> { [ Arabic_waw,      NoSymbol,                   VoidSymbol              ] };
+    key <AD03> { [ Arabic_ain,      Arabic_fatha,               VoidSymbol              ] };
+    key <AD04> { [ Arabic_ra,       Arabic_superscript_alef,    VoidSymbol              ] };
+    key <AD05> { [ Arabic_teh,      Arabic_tah,                 Arabic_tehmarbuta       ] };
+    key <AD06> { [ Arabic_zain,     Arabic_thal,                Arabic_jeh              ] };
+    key <AD07> { [ Arabic_waw,      NoSymbol,                   VoidSymbol              ] };
+    key <AD08> { [ Farsi_yeh,       Arabic_yeh,                 Arabic_alefmaksura      ] };
+    key <AD09> { [ Arabic_waw,      NoSymbol,                   VoidSymbol              ] };
+    key <AD10> { [ Arabic_peh,      Arabic_hamza,               ellipsis                ] };
+
+    key <AC01> { [ Arabic_alef,     Arabic_maddaonalef,         0x1000671               ] };
+    key <AC02> { [ Arabic_seen,     Arabic_sad,                 Arabic_theh             ] };
+    key <AC03> { [ Arabic_dal,      Arabic_hamza_above,         Arabic_hamza_below      ] };
+    key <AC04> { [ Arabic_feh,      Arabic_damma,               VoidSymbol              ] };
+    key <AC05> { [ Arabic_gaf,      NoSymbol,                   quotedbl                ] };
+    key <AC06> { [ Arabic_heh,      Arabic_hah,                 0x100202d               ] };
+    key <AC07> { [ Arabic_jeem,     Arabic_tcheh,               0x100202a               ] };
+    key <AC08> { [ Arabic_keheh,    colon,                      semicolon               ] };
+    key <AC09> { [ Arabic_lam,      Arabic_hamzaonalef,         VoidSymbol              ] };
+
+
+    key <AB01> { [ Arabic_sheen,    Arabic_hamzaonwaw,          VoidSymbol              ] };
+    key <AB02> { [ Arabic_khah,     Arabic_ghain,               0x100202e               ] };
+    key <AB03> { [ Arabic_dad,      Arabic_zah,                 Arabic_sukun            ] };
+    key <AB05> { [ Arabic_beh,      Arabic_hamzaunderalef,      VoidSymbol              ] };
+    key <AB06> { [ Arabic_noon,     Arabic_fathatan,            0x100fd3e               ] };
+    key <AB07> { [ Arabic_meem,     guillemotleft,              0x100fd3f               ] };
+    key <AB08> { [ Arabic_comma,    Arabic_semicolon,           NoSymbol                ] };
+    key <AB09> { [ Arabic_fullstop, colon,                      NoSymbol                ] };
+};
