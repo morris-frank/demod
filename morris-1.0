@@ -69,16 +69,17 @@ xkb_symbols "ir" {
     include "nbsp(zwnj2nb3nnb4)"
     include "morris(punctuation)"
 
+    key <AE11> { [ backslash,       Arabic_question_mark,       NoSymbol                ] };
 
     key <AD01> { [ Arabic_qaf,      NoSymbol,                   VoidSymbol              ] };
-    key <AD02> { [ Arabic_waw,      NoSymbol,                   VoidSymbol              ] };
+    key <AD02> { [ Arabic_waw,      Arabic_hamzaonwaw,          VoidSymbol              ] };
     key <AD03> { [ Arabic_ain,      Arabic_fatha,               VoidSymbol              ] };
     key <AD04> { [ Arabic_ra,       Arabic_superscript_alef,    VoidSymbol              ] };
     key <AD05> { [ Arabic_teh,      Arabic_tah,                 Arabic_tehmarbuta       ] };
     key <AD06> { [ Arabic_zain,     Arabic_thal,                Arabic_jeh              ] };
-    key <AD07> { [ Arabic_waw,      NoSymbol,                   VoidSymbol              ] };
+    key <AD07> { [ Arabic_waw,      Arabic_hamzaonwaw,          VoidSymbol              ] };
     key <AD08> { [ Farsi_yeh,       Arabic_yeh,                 Arabic_alefmaksura      ] };
-    key <AD09> { [ Arabic_waw,      NoSymbol,                   VoidSymbol              ] };
+    key <AD09> { [ Arabic_waw,      Arabic_hamzaonwaw,          VoidSymbol              ] };
     key <AD10> { [ Arabic_peh,      Arabic_hamza,               ellipsis                ] };
 
     key <AC01> { [ Arabic_alef,     Arabic_maddaonalef,         0x1000671               ] };

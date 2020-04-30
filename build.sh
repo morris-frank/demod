@@ -2,4 +2,4 @@
 updpkgsums
 makepkg -f
 sudo pacman -U xkb-morris-*-any.pkg.tar.xz
-setxkbmap -model pc104 -layout morris,morris -variant de,ir -option "altwin:prtsc_rwin" -option "caps:none"
+setxkbmap -layout morris,morris -variant de,ir -option "grp:shifts_toggle" -option "altwin:prtsc_rwin" -option "caps:none"
