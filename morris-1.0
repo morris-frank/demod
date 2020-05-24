@@ -31,7 +31,9 @@ xkb_symbols "de" {
     key <AE03> { [ 3,                       section,                 NoSymbol,                U1F937                    ] };
     key <AE04> { [ 4,                       dollar,                  EuroSign,                U1F926                    ] };
     key <AE05> { [ 5,                       percent,                 NoSymbol,                U1F914                    ] };
-    key <AE10> { [ 0,                       equal,                   braceright,              U2248                     ] };
+    key <AE08> { [ 8,                       bracketleft,             UFD3E,                   NoSymbol                  ] };
+    key <AE09> { [ 9,                       bracketright,            UFD3F,                   NoSymbol                  ] };
+    key <AE10> { [ 0,                       equal,                   plusminus,               U2248                     ] };
 
     key <AD01> { [ q,                       Q,                       at,                      U211A                     ] };
     key <AD02> { [ w,                       W,                       Greek_omega,             Greek_OMEGA               ] };

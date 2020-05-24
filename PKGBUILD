@@ -11,7 +11,7 @@ groups=()
 depends=('xkeyboard-config')
 install=
 source=("morris-$pkgver")
-sha256sums=('66caf7150b416cc73be775ebf448bc1db3e6db1d7be1f69706f26efb4968a972')
+sha256sums=('af288835292bb9872d48bc1236ae8bd181913bc5c54f1a05ee6f6de9cf22ebec')
 
 package() {
 	install -Dm644 morris-$pkgver "$pkgdir/usr/share/X11/xkb/symbols/morris"
