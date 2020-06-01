@@ -71,6 +71,7 @@ xkb_symbols "ir" {
     include "nbsp(zwnj2nb3nnb4)"
     include "morris(punctuation)"
 
+    key <AE06> { [ Farsi_6,	        ampersand,                  asciicircum	            ] };
     key <AE11> { [ backslash,       Arabic_question_mark,       NoSymbol                ] };
 
     key <AD01> { [ Arabic_qaf,      NoSymbol,                   VoidSymbol              ] };
