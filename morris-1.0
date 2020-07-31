@@ -92,7 +92,7 @@ xkb_symbols "ir" {
     key <AC05> { [ Arabic_gaf,      NoSymbol,                   quotedbl                ] };
     key <AC06> { [ Arabic_heh,      Arabic_hah,                 0x100202d               ] };
     key <AC07> { [ Arabic_jeem,     Arabic_tcheh,               0x100202a               ] };
-    key <AC08> { [ Arabic_keheh,    colon,                      semicolon               ] };
+    key <AC08> { [ Arabic_keheh,    Arabic_kaf,                 semicolon               ] };
     key <AC09> { [ Arabic_lam,      Arabic_hamzaonalef,         VoidSymbol              ] };
 
 
